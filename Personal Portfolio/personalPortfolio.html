@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Richard Shelton's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/personalPortfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/button.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/button.min.css">
+</head>
+<body>
+	<header>
+		<h2><a href="#">Richard Shelton</a></h2>
+		<!--<nav>
+			<a href="#"><button class="ui secondary button">About</button></a>
+			<a href="#"><button class="ui secondary button">Projects</button></a>
+			<a href="#"><button class="ui secondary button">Contact</button></a>
+		</nav> -->
+	</header>
+
+	<section class="one">
+		<div class="background-image" style="background-image: url(assets/img/bandw.jpg);"></div>
+		<div class="one-content">
+			<h1>Welcome to my Portfolio</h1>
+			<h3>The Single Page Application</h3>
+			
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="background-image" style="background-image: url(assets/img/background2.jpg);"></div>
+		<div class="container">
+			<div class="header">
+				<h3>Who I Am As A Person</h3>
+				<p>And As A Web Developer</p>
+				
+			</div>
+			<div class="row">
+				<div class="one-third column">
+					<div class="block">
+						<i class="fa fa-medkit fa-4x"></i>
+						<h5>Heathcare Experience</h5>
+						<p class="text">After spending 3 years in healthcare, I would love to combine the knowledge I recieved in healthcare with my skills as a web developer. So if you have any clients that are in the healthcare industry, I have the knowledge to understand what they are asking for. </p>
+					</div>
+				</div>
+				<div class="one-third column">
+					<div class="block">
+						<i class="fa fa-code fa-4x"></i>
+						<h5>Full-Stack Developer</h5>
+						<p class="text">I build my websites using HTML5, CSS3, and JS. My blog site and my multi-page portfolio site are built with HTML5, CSS3, JS, Node.js, Express.js, and MongoDB.</p>
+					</div>
+				</div>
+				<div class="one-third column">
+					<div class="block">
+						<i class="fa fa-wordpress fa-4x"></i>
+						<h5>Wordpress Developer</h5>
+						<p class="text">But let's be real, a job is a job right? So I learned how to build WordPress sites to add to my portfolio. Currently working on a WordPress site for a local vegan latin food truck.</p>
+					</div>
+				</div>
+				<div class="one-third column">
+					<div class="block">
+						<i class="fa fa-thumbs-up fa-4x"></i>
+						<h5>But Also A Quick Learner</h5>
+						<p class="text">Being a self-taught programmer with healthcare experience, I have the skill set to learn what is needed in a timely manner while have the communication skills to talk to anyone.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>	
+				
+	
+	<section class="projects">
+		<div class="header">
+			<h3>Words Without Works Are Dead</h3>
+			<p>So Here Are My Projects</p>
+			
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="thumbnail" id="one">
+					<div class="container">
+						<img src="assets/img/blogApp.png">
+						<br>
+						<span>Personal Blog Site: Featuring HTML/CSS/JS/Node.js/Express.js/MongoDB<br>
+						<button class="ui inverted button black"><a href="http://www.richardsheltonblog.com">Blog App</a></button></span>
+					</div>
+				</div>
+				<div class="thumbnail" id="two">
+					<div class="container">
+						<img src="assets/img/multi.png">
+						<br>
+						<span>Multi-Page Portfolio Site: Featuring HTML/CSS/JS/Node.js/Express.js<br><button class="ui inverted button black"><a href="#">Multi-Page Portfolio</a></button></span>
+					</div>
+				</div>
+				<div class="thumbnail" id="three">
+					<div class="container">
+						<img src="assets/img/wordPress.png">
+						<br>
+						<span>WordPress Portfolio Site: Featuring HTML/CSS/Wordpress Plugins<br><button class="ui inverted button black"><a href="#">WordPress Portfolio</a></button></span>
+					</div>
+				</div>
+				<div class="thumbnail" id="four">
+					<div class="container">
+						<img src="assets/img/colorGame.jpg">
+						<br>
+						<span>Color Game: Featuring HTML/CSS/JS. JS Heavy Project<br><button class="ui inverted button black"><a href="https://codepen.io/richardshelton13/full/PExqpb/">Color Game</a></button></span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>	
+	
+	<section class="contact">
+		<div class="header">
+			<h3>Or Contact Me Here</h3>
+			<button class="ui invervted button black" id="info">Contact Me</button>
+		</div>
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span id="close">&times;</span>
+					<h3>Contact Form</h3>
+				</div>
+				<form action="mailto:richard.shelton567@gmail.com" method="post" enctype="text/plain">
+					<div class="user">
+						<input type="text" name="name" placeholder="Your Name" required>
+					</div>
+					<div class="user">
+						<input type="email" name="email" placeholder="Your Email" required>
+					</div>
+					<div class="user">
+						<p>Regarding:</p>
+						<select id="topic">
+							<option value="general">General</option>
+							<option value="critiques">Critiques</option>
+							<option value="projects">Projects</option>
+						</select>
+					</div>
+					<div class="user">	
+						<textarea id="subject" name="subject" placeholder="Subject Here" style="height: 100px"></textarea>
+					</div>
+					<div class="user">
+						<button class="ui inverted button blue" type="submit" value="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>	
+
+			
+	
+	<footer>
+		<p>Richard Shelton</p>		
+		<ul>
+			<li>Phone Number: 904-322-3770</li>
+			<li>Email Address: richard.shelton567@gmail.com</li>
+		</ul>
+		<ul>
+			<li><a href="https://twitter.com/reddieshelton"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/richard-shelton-2b1707159/"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			<li><a href="https://github.com/rslol"><i class="fa fa-github-square fa-2x"></i></a></li>
+		</ul>		
+	</footer>
+	
+	<script type="text/javascript" src="assets/js/personalPortfolio.js"></script>
+</body>
+</html>
+			
+			

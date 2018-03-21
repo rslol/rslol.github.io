@@ -1,0 +1,307 @@
+/*General Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  text-align: right; 
+}
+
+html {
+  font: normal 16px sans-serif;
+  color: black;
+}
+
+ul, nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: white;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+button.ui {
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+/*Every section but section one will alternate background colors*/
+section:not(.one):nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+/*Header Styles*/
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: white;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  font-family: 'Mukta Mahee', sans-serif;
+  text-align: center;
+}
+
+header nav {
+  /*To make nav bar float right*/
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav button {
+  margin: 0 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: gray;
+  border: 0;
+  margin-bottom: 50px;
+  
+}
+
+section h5 {
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.text {
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header {
+  text-transform: capitalize;
+  font: bold 35px "Open Sans", sans-serif;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column
+  }
+}
+
+img {
+  padding-bottom: 2%;
+}
+/*One Styles*/
+
+.one {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.one .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /*making sure it's behind any images*/
+  z-index: -1;
+  background-color: black;
+}
+
+.one h1 {
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.one h3 {
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px; 
+}
+
+
+.one-content {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+
+
+/*Project Section*/
+img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  grid-gap: 3.5em;
+  animation: 2s slidefade 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+  }
+}
+
+/*About Section*/
+.block {
+  text-align: center;
+}
+
+.about p, .projects p {
+  font: normal 28px "Open Sans", sans-serif;
+}
+
+/*Footer Section*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 16px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+  align-self: center;
+}
+
+/*The Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  animation: 1s fadein 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%;
+}
+
+.close {
+  color: blue;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.user {
+  padding-bottom: 15px;
+}
+
+.close:hover
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
