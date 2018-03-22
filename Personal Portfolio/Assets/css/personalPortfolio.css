@@ -221,12 +221,9 @@ img {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .thumbnail {
-    width: 100%;
-  }
+button { 
+  margin-top: 15px;
 }
-
 /*About Section*/
 .block {
   text-align: center;
