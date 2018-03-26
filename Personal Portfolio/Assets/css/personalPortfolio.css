@@ -199,7 +199,7 @@ img {
 }
 
 @media (max-width: 800px){
-  .block {
+  .block .about {
     flex-basis: 100%;
     flex-direction: column;
   }
