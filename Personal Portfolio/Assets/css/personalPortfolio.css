@@ -185,9 +185,7 @@ input::placeholder {
   padding-bottom: 15px;
 }
 
-.close:hover
-.close:focus {
-  color: black;
+#close:hover {
   text-decoration: none;
   cursor: pointer;
 }
