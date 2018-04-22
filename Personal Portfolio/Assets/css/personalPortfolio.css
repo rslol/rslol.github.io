@@ -190,3 +190,9 @@ input::placeholder {
   cursor: pointer;
 }
 
+
+#myModal input[type="text"],
+#myModal input[type="email"] {
+  border-bottom: 1px solid white;
+}
+
