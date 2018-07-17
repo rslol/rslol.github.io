@@ -110,12 +110,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
+		color: white;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: white !important;
 		}
 
 		a img {
@@ -1973,6 +1973,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-image: none;
 			background-color: #fff;
+			flex: 1;
 		}
 
 		.wrapper.style2 {
